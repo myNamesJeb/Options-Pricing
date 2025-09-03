@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/options_pricing/META"
+  "_build/install/default/lib/options_pricing/dune-package"
+  "_build/install/default/lib/options_pricing/opam"
+]
+bin: [
+  "_build/install/default/bin/options_pricing"
+]

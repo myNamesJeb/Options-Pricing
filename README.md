@@ -1,5 +1,4 @@
 # OCaml Options Pricing Comparison
-
 ## Project Overview
 This project implements and compares **three popular options pricing algorithms** against historical data for **Apple Inc. (AAPL)** over the past five years. The goal is to determine which pricing model most accurately predicts real market option prices.
 
@@ -18,14 +17,14 @@ The project is written in **OCaml**, leveraging its strong type system and funct
 ---
 
 ## Features
-- Load historical stock and options data (CSV or API).
+- Load historical stock and options data (csv).
 - Calculate theoretical option prices for each method.
 - Compute accuracy metrics:
   - Mean Absolute Error (MAE)
   - Root Mean Squared Error (RMSE)
   - Percent error distribution
-- Generate visual comparisons (CLI output or plotting library).
-
+- Generate visual comparisons (CLI output).
+- Also learn NVIM with NVchad
 ---
 
 ## Project Structure
@@ -55,6 +54,14 @@ ocaml-options-pricing/
 - Optional: plotting library for visual analysis  
 
 ---
+
+progress marks:
+- [ ] Framework Down
+- [ ] Parsing Stock Data
+- [ ] algo1 
+- [ ] algo2
+- [ ] algo3
+
 
 
 License

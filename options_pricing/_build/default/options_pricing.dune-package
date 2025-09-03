@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name options_pricing)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (options_pricing)))
