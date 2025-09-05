@@ -1,8 +1,23 @@
 lib: [
   "_build/install/default/lib/options_pricing/META"
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.a" {"black_scholes/black_scholes.a"}
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cma" {"black_scholes/black_scholes.cma"}
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmi" {"black_scholes/black_scholes.cmi"}
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmt" {"black_scholes/black_scholes.cmt"}
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmx" {"black_scholes/black_scholes.cmx"}
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmxa" {"black_scholes/black_scholes.cmxa"}
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.ml" {"black_scholes/black_scholes.ml"}
   "_build/install/default/lib/options_pricing/dune-package"
   "_build/install/default/lib/options_pricing/opam"
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.a" {"quote_csv/quote_csv.a"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cma" {"quote_csv/quote_csv.cma"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmi" {"quote_csv/quote_csv.cmi"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmt" {"quote_csv/quote_csv.cmt"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmx" {"quote_csv/quote_csv.cmx"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmxa" {"quote_csv/quote_csv.cmxa"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.ml" {"quote_csv/quote_csv.ml"}
 ]
-bin: [
-  "_build/install/default/bin/options_pricing"
+libexec: [
+  "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmxs" {"black_scholes/black_scholes.cmxs"}
+  "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmxs" {"quote_csv/quote_csv.cmxs"}
 ]

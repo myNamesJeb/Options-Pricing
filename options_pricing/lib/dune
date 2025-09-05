@@ -1,2 +1,14 @@
+
 (library
- (name options_pricing))
+ (name quote_csv)
+ (modules quote_csv)
+ (public_name options_pricing.quote_csv))
+
+(library
+ (name volatility)
+ (modules volatility))
+
+(library
+ (name black_scholes)
+ (modules black_scholes)
+ (public_name options_pricing.black_scholes))

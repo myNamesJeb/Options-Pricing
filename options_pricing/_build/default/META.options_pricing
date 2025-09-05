@@ -1,0 +1,18 @@
+package "black_scholes" (
+  directory = "black_scholes"
+  description = ""
+  requires = ""
+  archive(byte) = "black_scholes.cma"
+  archive(native) = "black_scholes.cmxa"
+  plugin(byte) = "black_scholes.cma"
+  plugin(native) = "black_scholes.cmxs"
+)
+package "quote_csv" (
+  directory = "quote_csv"
+  description = ""
+  requires = ""
+  archive(byte) = "quote_csv.cma"
+  archive(native) = "quote_csv.cmxa"
+  plugin(byte) = "quote_csv.cma"
+  plugin(native) = "quote_csv.cmxs"
+)

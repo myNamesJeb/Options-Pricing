@@ -1,4 +1,4 @@
 (executable
- (public_name options_pricing)
  (name main)
- (libraries options_pricing))
+ (modules main)
+ (libraries quote_csv black_scholes volatility))

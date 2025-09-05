@@ -1,4 +1,53 @@
-(lang dune 3.17)
+(lang dune 3.20)
 (name options_pricing)
-(sections (lib .) (bin ../../bin))
-(files (lib (META dune-package opam)) (bin (options_pricing)))
+(sections (lib .) (libexec .))
+(files
+ (lib
+  (META
+   black_scholes/black_scholes.a
+   black_scholes/black_scholes.cma
+   black_scholes/black_scholes.cmi
+   black_scholes/black_scholes.cmt
+   black_scholes/black_scholes.cmx
+   black_scholes/black_scholes.cmxa
+   black_scholes/black_scholes.ml
+   dune-package
+   opam
+   quote_csv/quote_csv.a
+   quote_csv/quote_csv.cma
+   quote_csv/quote_csv.cmi
+   quote_csv/quote_csv.cmt
+   quote_csv/quote_csv.cmx
+   quote_csv/quote_csv.cmxa
+   quote_csv/quote_csv.ml))
+ (libexec (black_scholes/black_scholes.cmxs quote_csv/quote_csv.cmxs)))
+(library
+ (name options_pricing.black_scholes)
+ (kind normal)
+ (archives
+  (byte black_scholes/black_scholes.cma)
+  (native black_scholes/black_scholes.cmxa))
+ (plugins
+  (byte black_scholes/black_scholes.cma)
+  (native black_scholes/black_scholes.cmxs))
+ (native_archives black_scholes/black_scholes.a)
+ (main_module_name Black_scholes)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name black_scholes)
+   (visibility public)
+   (source (path Black_scholes) (impl (path black_scholes/black_scholes.ml))))))
+(library
+ (name options_pricing.quote_csv)
+ (kind normal)
+ (archives (byte quote_csv/quote_csv.cma) (native quote_csv/quote_csv.cmxa))
+ (plugins (byte quote_csv/quote_csv.cma) (native quote_csv/quote_csv.cmxs))
+ (native_archives quote_csv/quote_csv.a)
+ (main_module_name Quote_csv)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name quote_csv)
+   (visibility public)
+   (source (path Quote_csv) (impl (path quote_csv/quote_csv.ml))))))
