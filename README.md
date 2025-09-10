@@ -58,13 +58,13 @@ ocaml-options-pricing/
 progress marks:
 - [ ] Framework Down
 - [ ] Parsing Stock Data
-- [ ] algo1 
+- [x] algo1 
 - [ ] algo2
 - [ ] algo3
 
 
-
 License
+
 
 MIT License
 Author
