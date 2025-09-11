@@ -1,3 +1,12 @@
+package "binomial_tree" (
+  directory = "binomial_tree"
+  description = ""
+  requires = ""
+  archive(byte) = "binomial_tree.cma"
+  archive(native) = "binomial_tree.cmxa"
+  plugin(byte) = "binomial_tree.cma"
+  plugin(native) = "binomial_tree.cmxs"
+)
 package "black_scholes" (
   directory = "black_scholes"
   description = ""

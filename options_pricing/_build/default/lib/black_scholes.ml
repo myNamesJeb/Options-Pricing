@@ -19,7 +19,7 @@ let cdf x =
   0.5 *. (1.0 +. erf (x /. sqrt 2.0))
 
 (* Black-Scholes price for a European call option *)
-let call_price ~s ~k ~r ~t ~sigma =
+let call_price~s ~k ~r ~t ~sigma =
   let d1 = (log (s /. k) +. (r +. 0.5 *. sigma ** 2.0) *. t) /. (sigma *. sqrt t) in
   let d2 = d1 -. sigma *. sqrt t in
   s *. cdf d1 -. k *. exp (-. r *. t) *. cdf d2

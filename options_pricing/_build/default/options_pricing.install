@@ -1,5 +1,12 @@
 lib: [
   "_build/install/default/lib/options_pricing/META"
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.a" {"binomial_tree/binomial_tree.a"}
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cma" {"binomial_tree/binomial_tree.cma"}
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cmi" {"binomial_tree/binomial_tree.cmi"}
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cmt" {"binomial_tree/binomial_tree.cmt"}
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cmx" {"binomial_tree/binomial_tree.cmx"}
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cmxa" {"binomial_tree/binomial_tree.cmxa"}
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.ml" {"binomial_tree/binomial_tree.ml"}
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.a" {"black_scholes/black_scholes.a"}
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cma" {"black_scholes/black_scholes.cma"}
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmi" {"black_scholes/black_scholes.cmi"}
@@ -18,6 +25,7 @@ lib: [
   "_build/install/default/lib/options_pricing/quote_csv/quote_csv.ml" {"quote_csv/quote_csv.ml"}
 ]
 libexec: [
+  "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cmxs" {"binomial_tree/binomial_tree.cmxs"}
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmxs" {"black_scholes/black_scholes.cmxs"}
   "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmxs" {"quote_csv/quote_csv.cmxs"}
 ]

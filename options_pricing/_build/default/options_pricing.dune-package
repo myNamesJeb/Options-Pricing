@@ -4,6 +4,13 @@
 (files
  (lib
   (META
+   binomial_tree/binomial_tree.a
+   binomial_tree/binomial_tree.cma
+   binomial_tree/binomial_tree.cmi
+   binomial_tree/binomial_tree.cmt
+   binomial_tree/binomial_tree.cmx
+   binomial_tree/binomial_tree.cmxa
+   binomial_tree/binomial_tree.ml
    black_scholes/black_scholes.a
    black_scholes/black_scholes.cma
    black_scholes/black_scholes.cmi
@@ -20,7 +27,27 @@
    quote_csv/quote_csv.cmx
    quote_csv/quote_csv.cmxa
    quote_csv/quote_csv.ml))
- (libexec (black_scholes/black_scholes.cmxs quote_csv/quote_csv.cmxs)))
+ (libexec
+  (binomial_tree/binomial_tree.cmxs
+   black_scholes/black_scholes.cmxs
+   quote_csv/quote_csv.cmxs)))
+(library
+ (name options_pricing.binomial_tree)
+ (kind normal)
+ (archives
+  (byte binomial_tree/binomial_tree.cma)
+  (native binomial_tree/binomial_tree.cmxa))
+ (plugins
+  (byte binomial_tree/binomial_tree.cma)
+  (native binomial_tree/binomial_tree.cmxs))
+ (native_archives binomial_tree/binomial_tree.a)
+ (main_module_name Binomial_tree)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name binomial_tree)
+   (visibility public)
+   (source (path Binomial_tree) (impl (path binomial_tree/binomial_tree.ml))))))
 (library
  (name options_pricing.black_scholes)
  (kind normal)

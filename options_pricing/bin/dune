@@ -1,4 +1,4 @@
 (executable
  (name main)
  (modules main)
- (libraries quote_csv black_scholes volatility))
+ (libraries quote_csv black_scholes volatility binomial_tree))

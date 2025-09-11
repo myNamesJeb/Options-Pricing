@@ -12,3 +12,8 @@
  (name black_scholes)
  (modules black_scholes)
  (public_name options_pricing.black_scholes))
+
+(library
+ (name binomial_tree)
+ (modules binomial_tree)
+ (public_name options_pricing.binomial_tree))
