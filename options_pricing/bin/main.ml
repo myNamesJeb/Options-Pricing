@@ -56,8 +56,7 @@ let () =
              let put = Black_scholes.put_price ~s ~k ~r ~t ~sigma in
              Some (i, q.date, s, sigma, call, put, future_q.close_last)
          | None -> None)
-  |> List.filter_map (fun x -> x)
-  
+  |> List.filter_map (fun x -> x) 
   |> List.iter (fun (i, date, s, sigma, call, put, future) ->
        if i mod prediction_horizon = 0 then
          Printf.printf
