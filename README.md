@@ -27,26 +27,6 @@ The project is written in **OCaml**, leveraging its strong type system and funct
 - Also learn NVIM with NVchad
 ---
 
-## Project Structure
-
-ocaml-options-pricing/
-├── src/
-│ ├── black_scholes.ml
-│ ├── binomial_tree.ml
-│ ├── monte_carlo.ml
-│ └── main.ml
-├── data/
-│ └── apple_historical.csv
-├── README.md
-└── dune
-
-
-- **src/**: OCaml implementation of pricing models and main driver code.  
-- **data/**: Historical stock and option price data.  
-- **dune**: OCaml build configuration.  
-
----
-
 ## Prerequisites
 - OCaml 5.x  
 - Dune build system  
@@ -56,17 +36,33 @@ ocaml-options-pricing/
 ---
 
 progress marks:
-- [ ] Framework Down
-- [ ] Parsing Stock Data
-- [x] algo1 
-- [ ] algo2
-- [ ] algo3
+- [ ] Framework Down:
+    1. incorperate the algorithms with the main.ml - 2 weeks
+    2. measure error of the option pricing - 2 weeks
+    3. visualize output - 1 week
+
+- [ ] Parsing Stock Data:
+    1. import .csv - 1 week
+    2. parse stock data - 1 week 
+    3. streamline getting date ranges for option pricing in main.ml - 1-1.2 weeks
+    
+- [x] algo1 - 1 week
+- [x] algo2 - 1 week
+- [ ] algo3 - 1 week
+
+
+## Journal:
+
+
+09/23/2025:
+Added better data visuals and added 6 month predictions
 
 
 License
 
 
 MIT License
+
 Author
 
 Wilderf
