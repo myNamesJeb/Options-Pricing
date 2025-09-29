@@ -19,7 +19,7 @@ The project is written in **OCaml**, leveraging its strong type system and funct
 ## Features
 - Load historical stock and options data (csv).
 - Calculate theoretical option prices for each method.
-- Compute accuracy metrics:
+ Compute accuracy metrics:
   - Mean Absolute Error (MAE)
   - Root Mean Squared Error (RMSE)
   - Percent error distribution
@@ -56,6 +56,13 @@ progress marks:
 
 09/23/2025:
 Added better data visuals and added 6 month predictions
+
+09/25/2025:
+had some difficulty with a function (Calculate_price) where it was not liking me putting a let () = [aka a generic func.] be a named func with args, it was throwing bad errors, but i figured out it was just because i missed an in (which is like missing a ; a bit)
+
+09/29/2025:
+had some issues with calling Calculate_price, but fixed by making two nondescript functions, and also implemented some minor error calculation and better formatting for test data output
+-- sorry for not updating readme in commits, was doing `git add .` from options_pricing, not this dir -- 
 
 
 License
