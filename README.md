@@ -37,14 +37,14 @@ The project is written in **OCaml**, leveraging its strong type system and funct
 
 progress marks:
 - [ ] Framework Down:
-    1. incorperate the algorithms with the main.ml - 2 weeks
-    2. measure error of the option pricing - 2 weeks
-    3. visualize output - 1 week
+    [ ] incorperate the algorithms with the main.ml - 2 weeks
+    [ ] measure error of the option pricing - 2 weeks
+    [ ] visualize output - 1 week
 
 - [ ] Parsing Stock Data:
-    1. import .csv - 1 week
-    2. parse stock data - 1 week 
-    3. streamline getting date ranges for option pricing in main.ml - 1-1.2 weeks
+    [x] import .csv - 1 week
+    [x] parse stock data - 1 week 
+    [ ] streamline getting date ranges for option pricing in main.ml - 1-1.2 weeks
     
 - [x] algo1 - 1 week
 - [x] algo2 - 1 week
@@ -63,6 +63,19 @@ had some difficulty with a function (Calculate_price) where it was not liking me
 09/29/2025:
 had some issues with calling Calculate_price, but fixed by making two nondescript functions, and also implemented some minor error calculation and better formatting for test data output
 -- sorry for not updating readme in commits, was doing `git add .` from options_pricing, not this dir -- 
+
+30/09/2025:
+did initial tests with Binomial Tree and calculated:
+
+----------------------------------------
+Average BUYER call profit = 1.27
+Average BUYER put profit  = 2.43
+----------------------------------------
+Total Premiums Collected (Company Income)   = 49697.14
+Total Payoffs Paid Out (Company Expense)    = 58331.48
+Net Company Profit (Income - Expense)       = -8634.34
+
+which just means that Binomial Tree isnt that great, and lost 8.63k
 
 
 License
