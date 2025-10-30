@@ -37,7 +37,7 @@ The project is written in **OCaml**, leveraging its strong type system and funct
 
 progress marks:
 - [ ] Framework Down:
-    [ ] incorperate the algorithms with the main.ml - 2 weeks
+    [x] incorperate the algorithms with the main.ml - 2 weeks
     [ ] measure error of the option pricing - 2 weeks
     [ ] visualize output - 1 week
 
@@ -48,10 +48,29 @@ progress marks:
     
 - [x] algo1 - 1 week
 - [x] algo2 - 1 week
-- [ ] algo3 - 1 week
+- [x] algo3 - 1 week
 
 
 ## Journal:
+
+
+
+
+10/30/2025:
+made yuuuuuge changes, added implemet for **Forbes Pricing** (a more institutional pricing model)
+
+The Forbes Pricing model estimates fair values for options by blending Black-Scholes math with adjustments 
+that reflect how institutions actually trade. It calculates volatility not as a single fixed number, but 
+as a “surface” that changes with strike price and time to maturity, making the prices more realistic. The 
+model then computes call and put values, adjusting them for spreads, liquidity, and hedging costs to mimic 
+real market conditions. It also outputs option “Greeks,” which describe how sensitive the option price is 
+to changes in the market. In short, it gives prices and risk measures that are closer to what professional 
+desks would quote rather than purely theoretical values.
+
+it signifigantly outperforms pure Black-Scholes, and for that matter, the other 2 pricing models, which, i learned far to late; ARE MEANT TO MIMIC EACHOTHER??!?!? WHY??? "hmmm lets make a pricing model different than Black Scholes"
+"great idea!" "LETS MAKE IT ACT EXXXACCCTTLYYLYYY LIKE BLACK SCHOLES!!! BUT DIFFERENT MATH! ALMOST EXACT SAME OUTPUT!!"
+"sounds like a great idea!" LIKE WHY?? THEN THEY DID IT TWICE!?
+
 
 
 09/23/2025:
@@ -64,8 +83,10 @@ had some difficulty with a function (Calculate_price) where it was not liking me
 had some issues with calling Calculate_price, but fixed by making two nondescript functions, and also implemented some minor error calculation and better formatting for test data output
 -- sorry for not updating readme in commits, was doing `git add .` from options_pricing, not this dir -- 
 
-30/09/2025:
+09/30/2025:
 did initial tests with Binomial Tree and calculated:
+
+
 
 ----------------------------------------
 Average BUYER call profit = 1.27
@@ -77,6 +98,8 @@ Net Company Profit (Income - Expense)       = -8634.34
 
 which just means that Binomial Tree isnt that great, and lost 8.63k
 
+06/10/2025:
+Rewrote main.ml to be cleaner, it looks much better, cleaned some parts of the bin tree or black Scholes
 
 License
 

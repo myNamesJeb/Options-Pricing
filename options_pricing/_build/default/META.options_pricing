@@ -16,6 +16,15 @@ package "black_scholes" (
   plugin(byte) = "black_scholes.cma"
   plugin(native) = "black_scholes.cmxs"
 )
+package "monte_carlo" (
+  directory = "monte_carlo"
+  description = ""
+  requires = ""
+  archive(byte) = "monte_carlo.cma"
+  archive(native) = "monte_carlo.cmxa"
+  plugin(byte) = "monte_carlo.cma"
+  plugin(native) = "monte_carlo.cmxs"
+)
 package "quote_csv" (
   directory = "quote_csv"
   description = ""

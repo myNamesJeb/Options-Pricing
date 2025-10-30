@@ -1,4 +1,3 @@
-
 (library
  (name quote_csv)
  (modules quote_csv)
@@ -17,3 +16,13 @@
  (name binomial_tree)
  (modules binomial_tree)
  (public_name options_pricing.binomial_tree))
+
+(library
+ (name monte_carlo)
+ (public_name options_pricing.monte_carlo)
+ (modules monte_carlo))
+
+(library
+ (name forbes_pricing)
+ (public_name options_pricing.forbes_pricing)
+ (modules forbes_pricing))

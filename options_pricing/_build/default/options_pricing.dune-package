@@ -1,6 +1,6 @@
 (lang dune 3.20)
 (name options_pricing)
-(sections (lib .) (libexec .))
+(sections (lib .) (libexec .) (bin ../../bin))
 (files
  (lib
   (META
@@ -19,6 +19,13 @@
    black_scholes/black_scholes.cmxa
    black_scholes/black_scholes.ml
    dune-package
+   monte_carlo/monte_carlo.a
+   monte_carlo/monte_carlo.cma
+   monte_carlo/monte_carlo.cmi
+   monte_carlo/monte_carlo.cmt
+   monte_carlo/monte_carlo.cmx
+   monte_carlo/monte_carlo.cmxa
+   monte_carlo/monte_carlo.ml
    opam
    quote_csv/quote_csv.a
    quote_csv/quote_csv.cma
@@ -30,7 +37,9 @@
  (libexec
   (binomial_tree/binomial_tree.cmxs
    black_scholes/black_scholes.cmxs
-   quote_csv/quote_csv.cmxs)))
+   monte_carlo/monte_carlo.cmxs
+   quote_csv/quote_csv.cmxs))
+ (bin (main)))
 (library
  (name options_pricing.binomial_tree)
  (kind normal)
@@ -65,6 +74,23 @@
    (obj_name black_scholes)
    (visibility public)
    (source (path Black_scholes) (impl (path black_scholes/black_scholes.ml))))))
+(library
+ (name options_pricing.monte_carlo)
+ (kind normal)
+ (archives
+  (byte monte_carlo/monte_carlo.cma)
+  (native monte_carlo/monte_carlo.cmxa))
+ (plugins
+  (byte monte_carlo/monte_carlo.cma)
+  (native monte_carlo/monte_carlo.cmxs))
+ (native_archives monte_carlo/monte_carlo.a)
+ (main_module_name Monte_carlo)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name monte_carlo)
+   (visibility public)
+   (source (path Monte_carlo) (impl (path monte_carlo/monte_carlo.ml))))))
 (library
  (name options_pricing.quote_csv)
  (kind normal)

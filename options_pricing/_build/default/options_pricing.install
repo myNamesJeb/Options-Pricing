@@ -15,6 +15,13 @@ lib: [
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmxa" {"black_scholes/black_scholes.cmxa"}
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.ml" {"black_scholes/black_scholes.ml"}
   "_build/install/default/lib/options_pricing/dune-package"
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.a" {"monte_carlo/monte_carlo.a"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.cma" {"monte_carlo/monte_carlo.cma"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.cmi" {"monte_carlo/monte_carlo.cmi"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.cmt" {"monte_carlo/monte_carlo.cmt"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.cmx" {"monte_carlo/monte_carlo.cmx"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.cmxa" {"monte_carlo/monte_carlo.cmxa"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.ml" {"monte_carlo/monte_carlo.ml"}
   "_build/install/default/lib/options_pricing/opam"
   "_build/install/default/lib/options_pricing/quote_csv/quote_csv.a" {"quote_csv/quote_csv.a"}
   "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cma" {"quote_csv/quote_csv.cma"}
@@ -27,5 +34,9 @@ lib: [
 libexec: [
   "_build/install/default/lib/options_pricing/binomial_tree/binomial_tree.cmxs" {"binomial_tree/binomial_tree.cmxs"}
   "_build/install/default/lib/options_pricing/black_scholes/black_scholes.cmxs" {"black_scholes/black_scholes.cmxs"}
+  "_build/install/default/lib/options_pricing/monte_carlo/monte_carlo.cmxs" {"monte_carlo/monte_carlo.cmxs"}
   "_build/install/default/lib/options_pricing/quote_csv/quote_csv.cmxs" {"quote_csv/quote_csv.cmxs"}
+]
+bin: [
+  "_build/install/default/bin/main"
 ]

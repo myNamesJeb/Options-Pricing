@@ -1,4 +1,4 @@
 (executable
  (name main)
- (modules main)
- (libraries quote_csv black_scholes volatility binomial_tree))
+ (public_name main)
+ (libraries quote_csv black_scholes binomial_tree monte_carlo volatility forbes_pricing))
